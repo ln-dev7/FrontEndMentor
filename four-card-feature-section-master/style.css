@@ -209,4 +209,18 @@ body {
     width: 80%;
   }
 }
+
+.attribution{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+}
+
+.attribution a{
+  color: rgb(84, 158, 242);
+  font-weight: bold;
+}
 /*# sourceMappingURL=style.css.map */
