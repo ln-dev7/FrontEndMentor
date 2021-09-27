@@ -53,9 +53,8 @@ body{
 }
 
 .background{
-    position: absolute;
     width: 100%;
-    height: 35%;
+    height: 40%;
     img{
         width: 100%;
         height: 100%;
@@ -63,7 +62,35 @@ body{
 }
 
 .container{
-    
+    display: flex;
+}
+
+.toggle-mode{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .5s;
+    &:hover{
+        opacity: 0.8;
+    }
+    & ion-icon:nth-child(2){
+        display: none;
+    }
+    &.active ion-icon:nth-child(2){
+        display: block;
+    }
+    &.active ion-icon:nth-child(1){
+        display: none;
+    }
 }
 
 .attribution{
@@ -73,6 +100,7 @@ body{
     align-items: center;
     text-align: center;
     font-weight: bold;
+    bottom: 0;
     a{
         color: $DarkGrayishBlue;
         font-weight: bold;

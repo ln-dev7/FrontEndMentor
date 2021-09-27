@@ -30,14 +30,58 @@ body {
 }
 
 .background {
-  position: absolute;
   width: 100%;
-  height: 35%;
+  height: 40%;
 }
 
 .background img {
   width: 100%;
   height: 100%;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.toggle-mode {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.toggle-mode:hover {
+  opacity: 0.8;
+}
+
+.toggle-mode ion-icon:nth-child(2) {
+  display: none;
+}
+
+.toggle-mode.active ion-icon:nth-child(2) {
+  display: block;
+}
+
+.toggle-mode.active ion-icon:nth-child(1) {
+  display: none;
 }
 
 .attribution {
@@ -53,6 +97,7 @@ body {
           align-items: center;
   text-align: center;
   font-weight: bold;
+  bottom: 0;
 }
 
 .attribution a {
