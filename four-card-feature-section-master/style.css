@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+*, ::before, ::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', san-serif;
+  color: #4c4e61;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  background: #fafafa;
+  min-height: 100vh;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30%;
+  margin-bottom: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.container-title h2 {
+  font-weight: 200;
+  text-align: center;
+  font-size: 30px;
+}
+
+.container-title h1 {
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 0.9rem;
+}
+
+.container-title h3 {
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+}
+
+.container-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container-middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container-card {
+  position: relative;
+  background: #fff;
+  -webkit-box-shadow: 0 2px 10px #a3a5ae;
+          box-shadow: 0 2px 10px #a3a5ae;
+  border-radius: 10px;
+  margin: 1.2rem;
+  width: 350px;
+  height: 240px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+}
+
+.container-card-title {
+  font-weight: 600;
+  font-size: 18px;
+  margin: 1rem 0 0.8rem 1rem;
+}
+
+.container-card-subtitle {
+  font-weight: 400;
+  font-size: 15px;
+  margin: -0.2rem 0 0.8rem 1rem;
+  opacity: 0.6;
+}
+
+.container-card-svg {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+}
+
+.cyan::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 3px;
+  background: #45d3d3;
+}
+
+.red::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 3px;
+  background: #ea5353;
+}
+
+.orange::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 3px;
+  background: #fcaf4a;
+}
+
+.blue::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 3px;
+  background: #549ef2;
+}
+
+.attribution {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-weight: bold;
+}
+
+.attribution a {
+  color: #549ef2;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1440px) {
+  .container-title {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container-title {
+    width: 80%;
+  }
+  .container-title h1 {
+    font-size: 1.5rem;
+  }
+  .container-title h2 {
+    font-size: 1.4rem;
+  }
+  .container-title h3 {
+    font-size: 1rem;
+    opacity: 0.6;
+  }
+  .container-card {
+    width: 80%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
