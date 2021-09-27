@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+// Primary
+$BrightBlue: hsl(220, 98%, 61%);
+$CheckBackground: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
+// Light Theme
+$VeryLightGray: hsl(0, 0%, 98%);
+$VeryLightGrayishBlue: hsl(236, 33%, 92%);
+$LightGrayishBlue: hsl(233, 11%, 84%);
+$DarkGrayishBlue: hsl(236, 9%, 61%);
+$VeryDarkGrayishBlue: hsl(235, 19%, 35%);
+// Dark Theme
+$VeryDarkBlue: hsl(235, 21%, 11%);
+$VeryDarkDesaturatedBlue: hsl(235, 24%, 19%);
+$LightGrayishBlue: hsl(234, 39%, 85%);
+$LightGrayishBlueHhover: hsl(236, 33%, 92%);
+$DarkGrayishBlue: hsl(234, 11%, 52%);
+$VeryDarkGrayishBlue: hsl(233, 14%, 35%);
+$VeryDarkGrayishBlue: hsl(237, 14%, 26%);
+
+$Mobile: 400px;
+$Desktop: 1440px;
+
+$Fontsize: 18px;
+
+*, ::before, ::after{
+    box-sizing: border-box;
+    font-family: 'Poppins', san-serif;
+    color: $VeryDarkBlue;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+ 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+body{
+    background: $VeryLightGray;
+    min-height: 100vh;
+}
+
+.attribution{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    a{
+        color: $Blue;
+        font-weight: bold;
+    }
+}

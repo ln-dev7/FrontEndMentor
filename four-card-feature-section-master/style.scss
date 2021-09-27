@@ -143,19 +143,6 @@ body{
     background: $Blue;
 }
 
-.attribution{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-weight: bold;
-    a{
-        color: $Blue;
-        font-weight: bold;
-    }
-}
-
 @media screen and (max-width: $Desktop){
     .container-title{
         width: 80%;
@@ -178,5 +165,18 @@ body{
     }
     .container-card{
         width: 80%;
+    }
+}
+
+.attribution{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    a{
+        color: $Blue;
+        font-weight: bold;
     }
 }
