@@ -114,9 +114,24 @@ body{
             border-top-right-radius: 3px;
             border-top-left-radius: 3px;
             &-items{
+                position: relative;
                 background: $VeryDarkDesaturatedBlue;
                 width: 100%;
                 padding: 1rem;
+            }
+            &-items:first-child{
+                border-top-right-radius: 3px;
+                border-top-left-radius: 3px;
+            }
+            &-items::before{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                content: '';
+                width: 100%;
+                height: 0.75px;
+                background: $DarkGrayishBlue;
+                opacity: .5;
             }
         }
         &-footer{
