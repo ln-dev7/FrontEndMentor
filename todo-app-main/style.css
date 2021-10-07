@@ -30,8 +30,10 @@ body {
 }
 
 .background {
+  z-index: -5;
+  position: absolute;
   width: 100%;
-  height: 40%;
+  height: 15vw;
 }
 
 .background img {
@@ -43,12 +45,156 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.container-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 40%;
+  margin-top: 50px;
+}
+
+.container-header-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: 0.5rem;
+}
+
+.container-header-title h1 {
+  font-weight: 700;
+}
+
+.container-header input {
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  background: #25273c;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+
+.container-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 40%;
+  border: none;
+  border-radius: 3px;
+  margin-bottom: 30px;
+}
+
+.container-items-item {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+.container-items-item-items {
+  background: #25273c;
+  width: 100%;
+  padding: 1rem;
+}
+
+.container-items-footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #25273c;
+  padding: 1rem;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.container-items-footer-filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-items-footer-filter p:nth-child(3) {
+  margin-right: 3rem;
+}
+
+.container-items-footer p, .container-items-footer span {
+  color: #777a92;
+}
+
+.container-items-footer p:hover, .container-items-footer span:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.container-items-footer p:not(p:first-child) {
+  margin-left: 1rem;
 }
 
 .toggle-mode {
-  position: fixed;
-  bottom: 15px;
-  right: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -72,15 +218,15 @@ body {
   opacity: 0.8;
 }
 
-.toggle-mode ion-icon:nth-child(2) {
+.toggle-mode ion-icon:nth-child(1) {
   display: none;
 }
 
-.toggle-mode.active ion-icon:nth-child(2) {
+.toggle-mode.active ion-icon:nth-child(1) {
   display: block;
 }
 
-.toggle-mode.active ion-icon:nth-child(1) {
+.toggle-mode.active ion-icon:nth-child(2) {
   display: none;
 }
 
