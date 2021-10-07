@@ -9,7 +9,20 @@ window.addEventListener('keypress', (event)=>{
             const newItem = document.createElement('div');
             newItem.classList.add('container-items-item-items')
             newItem.innerHTML = input.value;
+            
+            const check = document.createElement('div');
+            check.classList.add('check')
+            const checked = document.createElement('button');
+            checked.innerHTML = '<ion-icon name="checkmark-circle-outline"></ion-icon>';
+            const unchecked = document.createElement('button');
+            unchecked.innerHTML = '<ion-icon name="ellipse-outline"></ion-icon>';
+            check.appendChild(checked)
+            check.appendChild(unchecked)
+
+            newItem.appendChild(check)
+
             container.appendChild(newItem);
+
             number_count();
         }
         else{
